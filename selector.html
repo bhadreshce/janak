@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- 
+        Selector - 5 
+        1) universal selector  *
+        2) id selector #
+        3) class selector .
+        4) combinator selector 
+          - descendant selector (space)
+          -child selector (>)
+         - adjacent sibling selector (+)
+          - general sibling selector (~)
+       5) pesudo selector 
+     -->
+    <style>
+      /* descendant selector */
+      /* .first span {
+        color: red;
+      } */
+
+      /* child selector */
+
+      /* .first > span {
+        background-color: red;
+        color: black;
+      } */
+
+      /* adjacent sibling selector */
+      /* .first + span {
+        color: red;
+        background-color: black;
+      } */
+
+      /*  general sibling selector */
+      /* .first ~ span {
+        background-color: red;
+        color: black;
+      } */
+    </style>
+    <div class="first">
+      <span>span 1</span>
+      <div class="second">
+        <span>inner span</span>
+        <br />
+        <span>inner span</span>
+        <br />
+        <span>inner span</span>
+        <br />
+      </div>
+    </div>
+    <p>p</p>
+    <!-- <span>outer first</span>
+    <p>paragrapth outer</p>
+    <span>outer span</span> -->
+  </head>
+  <body></body>
+</html>

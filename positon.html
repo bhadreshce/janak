@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+          .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border: 2px solid black;
+           
+          }  
+
+          .main{
+            position: relative;
+            height: 800px;
+            width: 100%;
+            display: flex;
+            border: 2PX solid black;
+
+          }
+
+          .box2{
+
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            right: 50%;
+            /* left: 50px;*/
+            /*bottom: 40PX;*/
+          }
+
+          .box1{
+            z-index: -2;
+          }
+    </style>
+  </head>
+  <body>
+   <div class="main">
+      <div class="box box1">1</div>
+     <h1 class=" box2">hii this is my website</h1>
+      <div class="box box3">3</div>
+       <div class="box box4">4</div>
+   </div>
+  </body>
+</html>

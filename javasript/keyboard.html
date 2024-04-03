@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onresize="resizepage()">
+
+
+
+    <!-- <input type="text" id="input" onkeypress="keypressnow(event)"> -->
+    <!-- <input type="text" id="input" onkeydown="keydownevent(event)"> -->
+    <!-- <input type="text" id="input" onkeyup="keydownevent(event)"> -->
+    <!-- <select name="" id="" onchange="changename(event)">
+        <option value="bhavnagar">bhavnagar</option>
+        <option value="surat">surat</option>
+        <option value="ahmedabad">ahmedabad</option>
+    </select> -->
+    <!-- <input type="text" id="input" onblur="blurevent(event)" onfocus="focusinput(event)"> -->
+    <h1 id="data"></h1>
+    <script>
+        // function keypressnow(e) {
+        //     document.getElementById('data').innerText = e.target.value
+        // }
+
+        // function keydownevent(e) {
+        //     document.getElementById('data').innerText = e.target.value
+        // }
+
+        // function keydownevent(e) {
+        //     document.getElementById('data').innerText = e.target.value
+        // }
+
+        // function changename(e) {
+        //     alert(e.target.value)
+        // }
+
+        // function blurevent(e) {
+        //     e.target.style.backgroundColor = 'green'
+        // }
+
+        // function focusinput(e) {
+        //     e.target.style.backgroundColor = 'red'
+        // }
+        // function loadData(e) {
+        //     alert('hello')
+        // }
+
+        function resizepage() {
+            if (window.innerWidth < 300) {
+                document.body.style.backgroundColor = 'red'
+            } else {
+                document.body.style.backgroundColor = 'white'
+            }
+
+        }
+    </script>
+</body>
+
+</html>

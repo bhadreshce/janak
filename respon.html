@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .box{
+         width: 100%;
+         padding: 20px;
+         background-color: black;
+         display: flex;
+         gap: 20px;
+        }
+        
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        .b{
+            background-color: brown;
+            height: 100px;
+            width: 50%;
+        }
+
+        .main{
+            display: flex;
+            gap: 10px;
+        }
+
+    @media only screen and (max-width:400px) 
+        {      
+
+            .box{
+                flex-direction: column;
+                background-color: red;
+            }
+
+            a{ text-align: center;}
+
+
+               .main{
+           flex-direction: column;
+
+        }
+        .b{
+            width: 100%;
+        }
+
+        }
+
+    @media only screen and (max-width: 700px) and (min-width: 400px) {
+          .box{
+              
+                background-color: rgb(0, 255, 255);
+            }
+    }
+
+        </style>
+</head>
+<body>
+  
+    <div class="box">
+         <a href="">HOME</a>
+         <a href="">ABOUT</a>
+         <a href="">CONTACT</a>
+         <a href="">SERVICE</a>
+    </div>
+    <div class="main">
+         <div class="b">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+         </div>
+         <div class="b">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, sapiente.</p>
+         </div>
+    </div>
+
+
+</body>
+</html>
